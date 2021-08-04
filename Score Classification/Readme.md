@@ -15,13 +15,14 @@ This project focuses on **score detection** of the reviews. The scores given by 
 - EDA
 Basic Data exploration and null value removal. 
 Dataset Details:
-|Score|Samples
+
+|Score|Samples|
 |---|---|
-1|52268
-2|29769
-3|42640
-4|80655
-5|363122
+|1|52268|
+|2|29769|
+|3|42640|
+|4|80655|
+|5|363122|
 - Tokenization
 	- Punctuation spaced (e.g 'ok.fine' => 'ok . fine')
 	- Short forms separated (e.g don't => do n't)
@@ -36,9 +37,9 @@ A basic lstm model was created with an embedding layer. The embedding layer was 
 # Results
 After 5 epochs on the entire dataset an accuracy of 70% was achieved. The accuracy and loss graphs are given below. The graphs are made from loss and accuracy calculation of the validation data after each batch of model training.
 ## Accuracy
-![Acc][accuracy image]
+![Acc](acc.png)
 ## Loss
-![Loss][loss image]
+![Loss](loss.png)
 ## Final Confusion Matrix
 ![Confusion][confusion image]
 
